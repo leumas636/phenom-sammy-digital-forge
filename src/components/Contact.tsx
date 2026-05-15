@@ -26,8 +26,8 @@ export function Contact() {
           className="md:col-span-7 bg-background gold-border rounded-2xl p-8 md:p-10 space-y-6"
         >
           {[
-            { id: "name", label: "Name", type: "text" },
-            { id: "email", label: "Email", type: "email" },
+            { id: "name", label: "Name", type: "text", placeholder: "Phenom Sammy" },
+            { id: "email", label: "Email", type: "email", placeholder: "you@email.com" },
           ].map((f) => (
             <div key={f.id}>
               <label htmlFor={f.id} className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">
@@ -37,7 +37,8 @@ export function Contact() {
                 id={f.id}
                 type={f.type}
                 required
-                className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-lg transition-colors"
+                placeholder={f.placeholder}
+                className="w-full bg-card/60 border border-border focus:border-primary rounded-lg outline-none px-4 py-3 text-base placeholder:text-muted-foreground/40 transition-colors"
               />
             </div>
           ))}
@@ -47,9 +48,10 @@ export function Contact() {
             </label>
             <textarea
               id="message"
-              rows={4}
+              rows={5}
               required
-              className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-lg transition-colors resize-none"
+              placeholder="Tell me about your project, vision, or opportunity..."
+              className="w-full bg-card/60 border border-border focus:border-primary rounded-lg outline-none px-4 py-3 text-base placeholder:text-muted-foreground/40 transition-colors resize-none"
             />
           </div>
           <button
