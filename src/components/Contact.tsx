@@ -15,8 +15,9 @@ export function Contact() {
             ambitious partnerships.
           </p>
           <div className="space-y-3 text-sm">
-            <p className="text-muted-foreground"><span className="text-primary uppercase tracking-[0.2em] text-xs">Email </span>hello@phenomsammy.com</p>
-            <p className="text-muted-foreground"><span className="text-primary uppercase tracking-[0.2em] text-xs">Based </span>Lagos · Worldwide</p>
+            <p className="text-muted-foreground"><span className="text-primary uppercase tracking-[0.2em] text-xs">Name </span>Phenom Sammy</p>
+            <p className="text-muted-foreground"><span className="text-primary uppercase tracking-[0.2em] text-xs">Email </span>leumasgw636@gmail.com</p>
+            <p className="text-muted-foreground italic"><span className="text-primary uppercase tracking-[0.2em] text-xs not-italic">Motto </span>"Product of discipline and consistency."</p>
           </div>
         </div>
 
